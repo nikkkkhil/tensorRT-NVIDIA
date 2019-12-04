@@ -1,0 +1,16 @@
+---
+apiVersion: monitoring.coreos.com/v1
+kind: ServiceMonitor
+metadata:
+  name: basic-trtis-deployment
+  namespace: trtlab
+  labels:
+    scrape: nv-inference-metrics
+spec:
+  selector:
+    matchLabels:
+      app: basic-trtis-deployment
+  endpoints:
+  - port: metrics
+    interval: 2s
+    honorLabels: true
