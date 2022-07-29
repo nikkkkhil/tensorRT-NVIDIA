@@ -28,7 +28,7 @@ kiwisolver==1.0.1
 Mako==1.0.7
 MarkupSafe==1.0
 matplotlib==3.0.2
-mistune==0.8.4
+mistune==2.0.3
 more-itertools==4.3.0
 mxnet==1.4.0.post0
 nbconvert==5.4.1
